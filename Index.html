@@ -11,17 +11,16 @@
   <!-- Anchor Tag Example (Links) -->
   <h2>Anchor Tags</h2>
   <a href="https://pin.it/287BoiUVp" target="_blank">Visit Google</a><br>
-  <a href="https://pin.it/287BoiUVp">Go to About Page</a>
+  <a href="https:google.com" target="_parent">Go to About Page</a>
 
   <!--  Image Tag Example -->
-  <h2>Image Tags</h2>
-  <!-- Absolute URL -->
+  <h2>Image Tags</h2><!-- Absolute URL -->
   <p>Absolute URL:</p>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUjdWTrvqDkK1sWUQ1k04yhpOnQPIe1-dS54Sf_WBM7foBwXnjdrbzfjtt&s=10" alt="Placeholder Image"><br>
 
   <!-- Relative URL -->
   <p>Relative URL:</p>
-  <img src="images.jpg" alt="Local Image"><br>
+  <img src="images.jpeg" alt="Local Image"><br>
 
   <!-- Audio Tag Example -->
   <h2>Audio Tag</h2>
@@ -115,9 +114,63 @@
 
   <!--  Iframe Example -->
   <h2>Iframe Example</h2>
-  <iframe src="https://www.wikipedia.org" width="600" height="400" title="Wikipedia"></iframe>
+  <iframe src="https://www.wikipedia.org" width="600" height="400" title="Wikipedia"></iframe><br><br>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/UYmvFzDuO5k?si=Y-Re3IvmNwoSdzrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+ <h2>User Registration Form</h2>
+<fieldset width="500px">
+    <form action="/submit" method="POST">
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
 
-  <!--  Semantic Tags Example -->
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Hobbies:</label>
+    <input type="checkbox" name="hobbies" value="Reading">Reading
+    <input type="checkbox" name="hobbies" value="Traveling">Traveling
+    <input type="checkbox" name="hobbies" value="Gaming">Gaming<br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- File Upload -->
+    <label for="file">Upload Photo:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+    <!-- Submit and Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+</fieldset>
+  
+
+
+ <!--  Semantic Tags Example -->
   <h2>Semantic Tags</h2>
   <header>
     <h3>Website Header</h3>
